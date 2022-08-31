@@ -1,0 +1,71 @@
+.header-section{
+    margin-bottom:30px;
+}
+
+h1{
+    color: #496690;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 55px;  
+}
+
+.user-and-search-container{
+    display: flex;
+    justify-content:end;
+}
+
+.search-form{
+    width: 400px;
+    margin-right: 20px;
+}
+
+.form-control{
+    background: #F8FAFD;
+    border-radius: 6px;
+    border: white;
+}
+
+.search-book-container{
+    display: flex;
+    width: 100%;
+}
+
+.user-container img{
+    width:40px;
+}
+
+.add-data-section{
+    align-items: center;
+}
+
+.card{
+    width: 50%;
+    margin:auto;
+    border: white;
+}
+
+label{
+    color: #496690
+}
+
+.btn{
+    background: rgba(173, 195, 227, 0.83);
+    border-radius: 5px;
+    border: #F8FAFD;
+    color:#496690;
+    float: right;
+}
+
+@media only screen and (max-width: 800px) {
+    .card{
+        width: 100%;
+        margin:auto;
+    border: white;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .card{
+        width: 80%;
+    }
+}

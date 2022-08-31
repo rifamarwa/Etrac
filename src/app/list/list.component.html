@@ -1,0 +1,37 @@
+<section class="header-section">
+    <h1>Employee List</h1>
+    <div class="user-and-search-container">
+        <form id="searchForm" class="search-form">
+            <div class="search-container">
+                <input class="form-control" text="text" placeholder="Search...">
+                <button class="btn" type="submit" id="searchButton">
+                    <img src="assets/search-icon.svg">
+                </button>
+            </div>
+        </form>
+        <div class="user-container">
+            <img src="assets/avatar.png">
+        </div>
+    </div>
+</section>
+<section class="list-section row row-cols-md-9 g-4">
+    <div class="list-container col" *ngFor="let employee of employees ; let idx=index" >
+        <div class="card">
+            <div class="card-body">
+                <div class="avatar-container">
+                    <img src="{{employee.avatar}}">
+                </div>
+                <div class="info-and-button-container">
+                    <div class="info-container">
+                        <h3>{{employee.name}}</h3>
+                        <p>{{employee.email}}</p>
+                    </div>
+                    <div class="button-container">
+                        <a href="#" [routerLink]="['/employee/view/', employee.id]" class="btn btn-view">View</a>
+                        <a href="#" [routerLink]="['/employee/edit/', employee.id]" class="btn btn-edit">Edit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,46 @@
+h1{
+    color: #496690;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 55px;  
+    margin-bottom: 20px;
+}
+
+.card{
+    width: 50%;
+    margin:auto;
+    border: white;
+}
+
+.avatar-container{
+    text-align: center;
+}
+
+.avatar-container img{
+    border-radius: 20px;
+}
+
+
+label{
+    color: #496690
+}
+
+.btn{
+    background: rgba(173, 195, 227, 0.83);
+    border-radius: 5px;
+    border: #F8FAFD;
+    color:#496690;
+    float: right;
+}
+
+@media only screen and (max-width: 800px) {
+    .card{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .card{
+        width: 80%;
+    }
+}

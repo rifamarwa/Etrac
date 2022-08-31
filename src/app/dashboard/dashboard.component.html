@@ -1,0 +1,65 @@
+<section class="header-section">
+    <h1>Dashboard</h1>
+    <div class="user-and-search-container">
+        <form id="searchForm" class="search-form">
+            <div class="search-book-container">
+                <input class="form-control" text="text" placeholder="Search...">
+                <button class="btn" type="submit" id="searchButton">
+                    <img src="assets/search-icon.svg">
+                </button>
+            </div>
+        </form>
+        <div class="user-container">
+            <img src="assets/avatar.png">
+        </div>
+    </div>
+</section>
+<section class="first-section row row-cols-1 card-group">
+    <div class="card col">
+        <div class="card-body">
+            <div class="image">
+               <img src="./assets/database-icon.png">
+            </div>
+            <div class="detail">
+                <h4>Total Data</h4>
+                <h3>{{employees.length}}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="card col">
+        <div class="card-body">
+            <div class="image">
+                <img src="./assets/database-icon.png">
+            </div>
+            <div class="detail">
+                <h4>Total Data</h4>
+                <h3>{{employees.length}}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="card col">
+        <div class="card-body">
+            <div class="image">
+                <img src="./assets/database-icon.png">
+            </div>
+            <div class="detail">
+                <h4>Total Data</h4>
+                <h3>{{employees.length}}</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="second-section row row-cols-1 row-cols-md-1 row-cols-lg-1 card-group">
+    <div class="card card-chart col">
+        <div class="card-body">
+            <div class="chart-column">
+                <highcharts-chart style="display:inline-block" [Highcharts]="Highcharts" [options]="highcharts"></highcharts-chart>
+            </div>
+        </div>
+    </div>
+    <div class="card card-chart col">
+        <div class="card-body">
+            <highcharts-chart style="display:inline-block" [Highcharts]="Highcharts" [options]="highcharts2"></highcharts-chart>
+        </div>
+    </div>
+</section>

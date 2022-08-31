@@ -1,0 +1,40 @@
+
+<section class="detail-data-section">
+    <h1>{{employee.name}}'s Detail Data</h1>
+    <div class="card">
+        <div class="card-body">
+            <div class="avatar-container">
+                <img src="{{employee.avatar}}">
+            </div>
+            <div class="detail-info-container">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text"  [(ngModel)]="employee.name" class="form-control" id="name" name="name" disabled>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="cityLived">City</label>
+                        <input type="text"  [(ngModel)]="employee.cityLived" class="form-control" id="cityLived" name="cityLived"  disabled>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" [(ngModel)]="employee.email" class="form-control" id="email" name="email"  disabled>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="string" [(ngModel)]="employee.phoneNumber" class="form-control" id="phoneNumber" name="phoneNumber"  disabled>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="companyName">Company Name</label>
+                        <input type="text" [(ngModel)]="employee.companyName" class="form-control" id="companyName" name="companyName"  disabled>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="salary">Salary ($)</label>
+                        <input type="number" [(ngModel)]="employee.salary" class="form-control" id="salary" name="salary"  disabled>
+                    </div><br>
+                </form>
+                <button class="btn"  [routerLink]="['/list']" >Back</button>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,40 @@
+<section class="header-section">
+    <h1>Add Data</h1>
+</section>
+<section class="add-data-section">
+    <div class="card">
+        <div class="card-body">
+            <form  (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="validationDefault01" class="form-label">Full Name</label>
+                    <input type="text" [(ngModel)]="employees.name" class="form-control" id="validationDefault01" name="name" required>
+                </div><br>
+                <div class="form-group">
+                    <label for="cityLived">City</label>
+                    <input type="text"  [(ngModel)]="employees.cityLived" class="form-control" id="cityLived" name="cityLived">
+                </div><br>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" [(ngModel)]="employees.email" class="form-control" id="email" name="email" required >
+                </div><br>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="string" [(ngModel)]="employees.phoneNumber" class="form-control" id="phoneNumber" name="phoneNumber">
+                </div><br>
+                <div class="form-group">
+                    <label for="companyName">Company Name</label>
+                    <input type="text" [(ngModel)]="employees.companyName" class="form-control" id="companyName" name="companyName" required>
+                </div><br>
+                <div class="form-group">
+                    <label for="salary">Salary</label>
+                    <input type="number" [(ngModel)]="employees.salary" class="form-control" id="salary" name="salary">
+                </div><br>
+                <div class="form-group">
+                    <label for="avatar">Avatar</label>
+                    <input type="text" [(ngModel)]="employees.avatar"class="form-control" id="avatar" name="avatar">
+                </div><br>
+                <button class="btn btn-primary" type="submit" (click) = "saveData()" >Save</button>
+            </form>
+        </div>
+    </div>
+</section>
